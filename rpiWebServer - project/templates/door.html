@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Automatyczny dom</title>	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+</head>
+
+<body>	
+	<div class="square">
+		<div class="menu">
+			<a href="/templates/home"  class="home">Strona główna</a>
+			<a href="/templates/main"  class="systems">Systemy</a>
+			<a href="/templates/alerts"  class="systems">Alarmy</a>
+			<a href="/"  class="logout">Wyloguj się</a>
+		</div>
+		<div class="container">
+			<h3>Drzwi<br><br>
+				<div class="pin-login" id="mainPinLogin">
+					<input type="text" readonly class="pin-login__text">
+					<div class="pin-login__numpad"></div>
+				</div>
+				<script src="/static/pin.js"></script>
+						
+				<form method="POST"><br>
+					<input type="submit" name="doors_off" value="Zamknij">
+				</form>
+				
+			</h3>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL">
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<title>Automatyczny dom</title>	
+	<link rel="stylesheet" href="/static/style.css" type="text/css"/>
+</head>
+
+<body>
+	<div class="square">
+		<div class="menu">
+			<a href="/templates/home"  class="home">Strona główna</a>
+			<a href="/templates/main"  class="systems">Systemy</a>
+			<a href="/templates/alerts"  class="systems">Alarmy</a>
+			<a href="/"  class="logout">Wyloguj się</a>
+		</div>
+		<div class="container">
+			<h3>Oświetlenie<br><br>
+			Pomiar 1<br>
+			Poziom oswietlenia: {{ capacitor_percentage_value }} %
+				<form method="POST">
+					<input type="submit" name="ldr_capacitor" value="Zapal">
+				</form>
+			Pomiar 2<br>
+			Poziom oswietlenia: {{ digital_percentage_value }} %
+                <form method="POST">
+					<input type="submit" name="digital_sensor" value="Zapal">
+				</form>
+			Pomiar 3<br>
+    			Poziom oswietlenia: {{ adc_percentage_value }} %
+                <form method="POST">
+					<input type="submit" name="ldr_adc" value="Zapal">
+				</form>
+				<form method="POST">
+					<input type="submit" name="lighting_stop"id="stop_btn"  value="Zgaś">
+				</form>
+				
+			</h3>
+		</div>
+	</div>
+</body>
+</html>
+
