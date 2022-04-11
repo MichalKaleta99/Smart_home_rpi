@@ -4,7 +4,7 @@ Smart home - building automation system based on the Raspberry Pi minicomputer w
 from sensors and to control the actuators such as servomechanisms (also DC motors), a fan, LED diodes and a buzzer. I also used a keyboard (which basically was just 16 
 buttons) that imitated an intercom. Whole programming project was combined with self-made house mockup which photos you can see in this repo.
 
-# Developing system
+# Adding features
 
 I consider that project as a fully completed physically and i do not want to add any sensors or actuators.
 
